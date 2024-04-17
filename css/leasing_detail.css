@@ -1,0 +1,151 @@
+#container .video_background {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#overview {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  height: 900px;
+}
+
+#overview .container .head_top {
+  color: #5c5e65;
+  font-size: 48px;
+  line-height: 1.33;
+  font-family: font-title;
+  text-transform: uppercase;
+}
+
+#overview .container .head_down {
+  color: #00554a;
+  font-size: 64px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+#overview_detail {
+  margin-top: 60px;
+  display: flex;
+  position: relative;
+}
+
+.title-about {
+  color: #5c5e65;
+  font-size: 34px;
+  line-height: 1.3;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+  position: relative;
+  z-index: 2;
+}
+
+.overview_detail_left {
+  position: absolute;
+  width: 39%;
+  height: 600px;
+  background: #d3d2c0;
+  left: 0;
+  bottom: 80px;
+  top: 0;
+}
+
+.img_about_left {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 197px;
+  height: 362px;
+}
+
+.img_about_right {
+  margin-top: 110px;
+  width: 446px;
+  height: 322px;
+  margin-left: 20px;
+}
+
+.overview_detail_right {
+  position: absolute;
+  right: 0;
+  width: 41%;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+
+#footer {
+  background-color: #f5f1e6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#footer_left {
+  width: 10%;
+  margin-right: 40px;
+}
+
+#footer_mid {
+  width: 30%;
+  margin-right: 40px;
+}
+#footer_mid .footer_mid_address {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+
+.hotline_container {
+  width: 75%;
+  background-color: #dca447;
+  justify-content: center;
+}
+.hotline_container p {
+  color: #fff;
+  font-size: 12px;
+  height: 25px;
+  padding-top: 9px;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 50%;
+  margin-left: 15px;
+}
+
+#footer_right {
+  align-items: flex-end;
+  width: 60%;
+}
+
+.vertical_division_line {
+  width: 1px;
+  background: rgb(255 255 255 / 0.5);
+  height: 30px;
+  margin: auto;
+}
+
+.form-control {
+  width: 70%;
+  align-self: flex-end;
+  margin-bottom: 5px;
+}
+
+.btn.btn-primary {
+  width: 70%;
+  background-color: #dca447;
+  border-color: #dca447;
+  margin-bottom: 10px;
+}
+
+#footer_right p {
+  width: 70%;
+  font-size: 12px;
+  align-self: flex-end;
+}

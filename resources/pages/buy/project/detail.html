@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      id="defaultSettingScript"
+      type="text/javascript"
+      src="/js/setting.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/mua-du-an.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+      <div id="header" class="ht-header" style="min-height: 70px">
+      <div class="container position-relative">
+        <div class="row flex-nowrap">
+          <div class="logo col-md-1">
+            <a href="./index.html">
+              <img src="/resources/img/vinhome-logo.svg" alt="vimhomes" />
+            </a>
+          </div>
+          <div class="main_menu col-md-8">
+            <nav class="navbar navbar-expand-lg bg-white ht_pdl_0">
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item first active">
+                    <a
+                      rel="nofollow"
+                      class="flex-vertical ht_relative ht_transition nav-link"
+                      href="/pages/index.html"
+                    >
+                      Về Vinhomes
+                    </a>
+                  </li>
+                  <li class="nav-item leaf dropdown">
+                    <a
+                      rel="nofollow"
+                      class="flex-vertical not-hover ht_relative ht_transition nav-link"
+                      aria-haspopup="true"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      href="/pages/buy/mua.html"
+                    >
+                      Mua
+                    </a>
+                    <div
+                      class="dropdown-menu"
+                      total="4"
+                      aria-labelledby="main_menu_2"
+                    >
+                      <a class="dropdown-item" href="/pages/buy/mua.html"
+                        ><div class="btn_animation1 from-center">Dự án</div>
+                      </a>
+                    </div>
+                    <div id="main_menu_2"></div>
+                  </li>
+                  <li class="nav-item leaf dropdown">
+                    <a
+                      rel="nofollow"
+                      class="flex-vertical not-hover ht_relative ht_transition nav-link"
+                      aria-haspopup="true"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      href="/pages/vinhomes.html"
+                    >
+                      Thuê
+                    </a>
+                    <div
+                      class="dropdown-menu"
+                      total="2"
+                      aria-labelledby="main_menu_3"
+                    >
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        ><div class="btn_animation1 from-center">Văn phòng</div>
+                      </a>
+                    </div>
+                    <div id="main_menu_3"></div>
+                  </li>
+                  <li class="nav-item leaf dropdown">
+                    <div
+                      class="dropdown-menu"
+                      total="5"
+                      aria-labelledby="main_menu_5"
+                    >
+                      <a
+                        rel="nofollow"
+                        class="dropdown-item"
+                        href="/vi/uu-dai-khuyen-mai"
+                        ><div class="btn_animation1 from-center">
+                          Ưu đãi khuyến mãi
+                        </div>
+                      </a>
+                      <a
+                        rel="nofollow"
+                        class="dropdown-item"
+                        href="/vi/phong-cach"
+                        ><div class="btn_animation1 from-center">
+                          Phong cách
+                        </div>
+                      </a>
+                      <a
+                        rel="nofollow"
+                        class="dropdown-item"
+                        href="/vi/tin-cong-ty"
+                        ><div class="btn_animation1 from-center">
+                          Tin công ty
+                        </div>
+                      </a>
+                    </div>
+                    <div id="main_menu_5"></div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="block-language">
+              <div class="dropdown">
+                <a href="" class="dropdown-item active-flag">
+                  <img src="/resources/img/vi-flag.svg" alt="vn" />
+                </a>
+                <a href="" class="dropdown-item active-flag">
+                  <img src="/resources/img/en-flag.svg" alt="vn" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="chart col-md-2 d-flex">
+            <div class="chart_img ht_flex d-flex">
+              <img src="/resources/img/chart.svg" alt="vinhomes_chart" />
+            </div>
+            <div class="chart_info_wrapper">
+              <span class="chart_text">VHM : HOSE</span>
+              <span class="chart_value">
+                <div
+                  id="block-hosevhm"
+                  class="block block-ht-custom block-hose-vhms"
+                >
+                  <span class="hose_vhm_value">43.150 VNĐ</span>
+                </div>
+              </span>
+            </div>
+          </div>
+          <div class="user_actions col-md-1">
+            <div class="ua_search">
+              <img
+                class="open"
+                src="/resources/img/search.svg"
+                alt="search"
+              />
+            </div>
+            <div class="ua_search">
+              <div
+                id="block-welcomeusernameloginlogout"
+                id="block-welcomeusernameloginlogout"
+                id="block-welcomeusernameloginlogout"
+                id="block-welcomeusernameloginlogout"
+                class="block block-ht-custom block-welcome-username"
+              >
+                <a href="user/login.html">
+                  <img
+                    class="open"
+                    src="/resources/img/user.svg"
+                    alt="search"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div
+        class="product_introduction"
+        style="
+          background-image: url('https://res.cloudinary.com/phuchq/image/upload/v1713065445/vinhomeSmartCityBackground_1_e3outt.jpg');
+        "
+      >
+        <div class="head_nav">
+          <img
+            src="https://res.cloudinary.com/phuchq/image/upload/v1713067074/logo_vinhome_smart_city_768x519_20004ccd58_qthqq2.png"
+            alt="SmartHomeIcon"
+          />
+          <ul class="sidebar-header mr-auto d-flex">
+            <li class="sidebar-header-item">
+              <a href="#overview">Tổng quan</a>
+            </li>
+            <li class="sidebar-header-item">
+              <a href="#product_location">Vị trí</a>
+            </li>
+            <li class="sidebar-header-item">
+              <a href="#product_special">Điểm nhấn</a>
+            </li>
+            <li class="sidebar-header-item">
+              <a href="#product_map">Bản đồ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="product_introduction_content d-flex">
+          <div class="product_introduction_content_left">
+            <h3>
+              Vinhomes Smart City - Thành phố quốc tế của những công dân toàn
+              cầu
+            </h3>
+            <p>
+              Vinhomes Smart City, thành phố tiện ích đẳng cấp quốc tế tọa lạc
+              tại trung tâm khu vực Mỹ Đình, là tâm điểm sống lý tưởng nhất dành
+              cho những cộng đồng người nước ngoài đang sống và làm việc tại Hà
+              Nội và thế hệ công dân toàn cầu của Việt Nam. <br />Sở hữu quy mô
+              280 ha với hệ thống tiện ích hoàn hảo, mật độ xây dựng chỉ 14,7%,
+              Vinhomes Smart City chính là thành phố đáng sống bậc nhất mang tới
+              một môi trường sống văn minh, hiện đại, an toàn với những giá trị
+              sống đầy nhân văn và chất lượng sống an lành.
+            </p>
+          </div>
+          <div class="product_introduction_content_right">
+            <img
+              class="w-100 h-100"
+              src="https://res.cloudinary.com/phuchq/image/upload/v1713066904/vinhomeSmartCityBackground_3_sgogmi.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        id="product_location"
+        class="product_location"
+        style="
+          background-image: url('https://res.cloudinary.com/phuchq/image/upload/v1713066905/vinhomeSmartCityBackground_2_s84unm.png');
+        "
+      >
+        <div class="product_location_content d-flex">
+          <div class="product_location_content_left">
+            <img
+              class="w-100 h-100"
+              src="https://res.cloudinary.com/phuchq/image/upload/v1713069985/map-01_1634035359_apqubi.png"
+              alt=""
+            />
+          </div>
+          <div class="product_location_content_right">
+            <h3>Vị trí dự án</h3>
+            <p>
+              Vinhomes Smart City - Thành phố Thông minh đẳng cấp Quốc tế năng
+              động, hiện đại. Vinhomes Smart City, thành phố tiện ích đẳng cấp
+              quốc tế tọa lạc tại trung tâm khu vực Mỹ Đình, là tâm điểm sống lý
+              tưởng nhất dành cho những cộng đồng người nước ngoài đang sống và
+              làm việc tại Hà Nội và thế hệ công dân toàn cầu của Việt Nam. Sở
+              hữu quy mô 280 ha với hệ thống tiện ích hoàn hảo, mật độ xây dựng
+              chỉ 14,7%, Vinhomes Smart City chính là thành phố đáng sống bậc
+              nhất mang tới một môi trường sống văn minh, hiện đại, an toàn với
+              những giá trị sống đầy nhân văn và chất lượng sống an lành.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="overview"
+        style="
+          background-image: url('https://res.cloudinary.com/phuchq/image/upload/v1713066904/vinhomeSmartCityBackground_3_sgogmi.jpg');
+        "
+      >
+        <h3>Tổng quan dự án</h3>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper d-flex" style="width: 2000px">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="https://res.cloudinary.com/phuchq/image/upload/v1713066905/To%CC%82%CC%89ng_ma%CC%A3%CC%86t_ba%CC%86%CC%80ng_du%CC%9B%CC%A3_a%CC%81n_3_rzhbhg.jpg"
+                class="card-img-top"
+                alt="The_Crown_Tong_the"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://res.cloudinary.com/phuchq/image/upload/v1713066907/To%CC%82%CC%89ng_ma%CC%A3%CC%86t_ba%CC%86%CC%80ng_du%CC%9B%CC%A3_a%CC%81n_1_pvnnvt.jpg"
+                class="card-img-top"
+                alt="The_Crown_Tong_the"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://res.cloudinary.com/phuchq/image/upload/v1713066906/To%CC%82%CC%89ng_ma%CC%A3%CC%86t_ba%CC%86%CC%80ng_du%CC%9B%CC%A3_a%CC%81n_2_kgr4z8.jpg"
+                class="card-img-top"
+                alt="The_Crown_Tong_the"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="container">
+          <h3>Phân khu dự án</h3>
+          <div class="swiper_area">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper d-flex" style="width: 100%">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img
+                  src="https://res.cloudinary.com/phuchq/image/upload/v1713066905/To%CC%82%CC%89ng_ma%CC%A3%CC%86t_ba%CC%86%CC%80ng_du%CC%9B%CC%A3_a%CC%81n_3_rzhbhg.jpg"
+                  class="card-img-top"
+                  alt="The_Crown_Tong_the"
+                />
+                <div class="swiper-slide-description">
+                  <h5>Phân khu saphire</h5>
+                  <span
+                    >Căn hộ Vinhomes Smart City sở hữu thiết kế linh hoạt và giá
+                    bán hợp lý, mang tới một không gian sống lý tưởng cho cộng
+                    đồng tinh hoa. Cùng tìm hiểu những thông tin mới nhất về căn
+                    hộ tại dự án Vinhomes Smart City qua bài viết dưới đây.Căn
+                    hộ Vinhomes Smart City gồm những loại hình nào?Định hướng
+                    xây dựng dự án Vinhomes Smart City trở thành nơi quy tụ cộng
+                    đồng dân cư văn minh và thành đạt, chủ đầu tư Vinhomes đã
+                    mạnh tay phát triển đa dạng loại hình căn hộ tại đây như
+                    studio, 1 phòng ngủ, 1 phòng ngủ + 1, 2 phòng ngủ, 2 phòng
+                    ngủ + 1, 3 phòng ngủ và 3 phòng ngủ + 1.</span
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://res.cloudinary.com/phuchq/image/upload/v1713066907/To%CC%82%CC%89ng_ma%CC%A3%CC%86t_ba%CC%86%CC%80ng_du%CC%9B%CC%A3_a%CC%81n_1_pvnnvt.jpg"
+                  class="card-img-top"
+                  alt="The_Crown_Tong_the"
+                />
+                <div class="swiper-slide-description">
+                  <h5>Phân khu sakura</h5>
+                  <span
+                    >Căn hộ Vinhomes Smart City sở hữu thiết kế linh hoạt và giá
+                    bán hợp lý, mang tới một không gian sống lý tưởng cho cộng
+                    đồng tinh hoa. Cùng tìm hiểu những thông tin mới nhất về căn
+                    hộ tại dự án Vinhomes Smart City qua bài viết dưới đây.Căn
+                    hộ Vinhomes Smart City gồm những loại hình nào?Định hướng
+                    xây dựng dự án Vinhomes Smart City trở thành nơi quy tụ cộng
+                    đồng dân cư văn minh và thành đạt, chủ đầu tư Vinhomes đã
+                    mạnh tay phát triển đa dạng loại hình căn hộ tại đây như
+                    studio, 1 phòng ngủ, 1 phòng ngủ + 1, 2 phòng ngủ, 2 phòng
+                    ngủ + 1, 3 phòng ngủ và 3 phòng ngủ + 1.</span
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://res.cloudinary.com/phuchq/image/upload/v1713066906/To%CC%82%CC%89ng_ma%CC%A3%CC%86t_ba%CC%86%CC%80ng_du%CC%9B%CC%A3_a%CC%81n_2_kgr4z8.jpg"
+                  class="card-img-top"
+                  alt="The_Crown_Tong_the"
+                />
+                <div class="swiper-slide-description">
+                  <h5>Phân khu tonkin</h5>
+                  <span
+                    >Căn hộ Vinhomes Smart City sở hữu thiết kế linh hoạt và giá
+                    bán hợp lý, mang tới một không gian sống lý tưởng cho cộng
+                    đồng tinh hoa. Cùng tìm hiểu những thông tin mới nhất về căn
+                    hộ tại dự án Vinhomes Smart City qua bài viết dưới đây.Căn
+                    hộ Vinhomes Smart City gồm những loại hình nào?Định hướng
+                    xây dựng dự án Vinhomes Smart City trở thành nơi quy tụ cộng
+                    đồng dân cư văn minh và thành đạt, chủ đầu tư Vinhomes đã
+                    mạnh tay phát triển đa dạng loại hình căn hộ tại đây như
+                    studio, 1 phòng ngủ, 1 phòng ngủ + 1, 2 phòng ngủ, 2 phòng
+                    ngủ + 1, 3 phòng ngủ và 3 phòng ngủ + 1.</span
+                  >
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://storage.googleapis.com/digital-platform/PC_S3_0789251bd3/PC_S3_0789251bd3.jpg"
+                  class="card-img-top"
+                  alt="The_Crown_Tong_the"
+                />
+                <div class="swiper-slide-description">
+                  <h5>Phân khu saphire 3</h5>
+                  <span
+                    >Căn hộ Vinhomes Smart City sở hữu thiết kế linh hoạt và giá
+                    bán hợp lý, mang tới một không gian sống lý tưởng cho cộng
+                    đồng tinh hoa. Cùng tìm hiểu những thông tin mới nhất về căn
+                    hộ tại dự án Vinhomes Smart City qua bài viết dưới đây.Căn
+                    hộ Vinhomes Smart City gồm những loại hình nào?Định hướng
+                    xây dựng dự án Vinhomes Smart City trở thành nơi quy tụ cộng
+                    đồng dân cư văn minh và thành đạt, chủ đầu tư Vinhomes đã
+                    mạnh tay phát triển đa dạng loại hình căn hộ tại đây như
+                    studio, 1 phòng ngủ, 1 phòng ngủ + 1, 2 phòng ngủ, 2 phòng
+                    ngủ + 1, 3 phòng ngủ và 3 phòng ngủ + 1.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="product_special">
+        <div class="container">
+          <h3>Điểm nhấn dự án</h3>
+          <video width="100%" height="600px" controls>
+            <source
+              src="https://res.cloudinary.com/phuchq/video/upload/v1713087309/Vinhomes_TV_-_TR%E1%BA%A2I_NGHI%E1%BB%86M_CHU%E1%BA%A8N_S%E1%BB%90NG_QU%E1%BB%90C_T%E1%BA%BE_T%E1%BA%A0I_ofabvi.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div id="product_map">
+        <div class="container">
+          <h3>Tổng mặt bằng diện tích</h3>
+        </div>
+        <img
+          width="100%"
+          src="https://res.cloudinary.com/phuchq/image/upload/v1713024152/vinhomeSmartCity_whkvp8.png"
+          alt="map"
+        />
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container d-flex">
+        <div id="footer_left">
+          <img
+            src="/resources/img/footer_icon.svg"
+            height="65px"
+            width="120px"
+          />
+        </div>
+        <div id="footer_mid" class="d-flex flex-column">
+          <p class="footer_mid_address">
+            Công ty Cổ phần Vinhomes Đại diện: Bà Vũ Thái Ninh (Theo giấy uỷ
+            quyền số 057 ngày 25/10/2022) Địa chỉ: Tòa nhà văn phòng Symphony,
+            Đường Chu Huy Mân, Khu đô thị sinh thái Vinhomes Riverside, Phường
+            Phúc Lợi, Quận Long Biên, Thành phố Hà Nội, Việt Nam. Điện thoại:
+            +84 24 39749350
+          </p>
+          <div class="hotline_container d-flex">
+            <p style="position: relative">Tổng đài CSKH</p>
+            <div class="vertical_division_line"></div>
+            <p>1900 2323 89</p>
+          </div>
+        </div>
+        <div id="footer_right">
+          <form id="footer_right_form" class="d-flex flex-column" method="post">
+            <input
+              type="text"
+              name="fullname"
+              class="form-control"
+              placeholder="Họ và tên"
+              aria-label="Fullname"
+              aria-describedby="basic-addon1"
+            />
+            <input
+              type="text"
+              name="phone"
+              class="form-control"
+              placeholder="Số điện thoại"
+              aria-label="Phonenumber"
+              aria-describedby="basic-addon1"
+            />
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Email"
+              aria-label="Email"
+              aria-describedby="basic-addon1"
+            />
+            <input
+              type="text"
+              name="content"
+              class="form-control"
+              placeholder="Nội dung cần tư vấn"
+              aria-label="Content"
+              aria-describedby="basic-addon1"
+            />
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="align-self: flex-end"
+            >
+              Đăng ký
+            </button>
+            <p>
+              Quý khách đăng ký nhận email quảng cáo về các chương trình ưu đãi,
+              khuyến mại và tin tức mới nhất từ Vinhomes.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        centeredSlides: true,
+        loop: true,
+        speed: 500,
+        slidesPerView: 3,
+        spaceBetween: 30,
+      });
+      const swiper_area = new Swiper(".swiper_area", {
+        centeredSlides: true,
+        loop: true,
+        speed: 500,
+        slidesPerView: 3,
+        spaceBetween: 30,
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="../../../js/mua.js"></script>
+    <script src="/js/common.js"></script>
+  </body>
+</html>

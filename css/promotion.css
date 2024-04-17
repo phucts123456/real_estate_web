@@ -1,0 +1,21 @@
+.judson_2 {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_page {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: garamondpremrpro;
+  color: #162b75;
+  line-height: 48px;
+}
+
+.bannertintuc_tin_tuc {
+  width: 100%;
+  height: 100%;
+}

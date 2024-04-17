@@ -1,0 +1,77 @@
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  border-radius: 12px;
+  padding: 10px;
+  width: 300px;
+}
+
+.login-pf-page {
+  display: flex;
+  height: 100vh;
+}
+.left_content {
+  width: 20%;
+}
+
+.left_content img {
+  height: 100%;
+  width: 100%;
+}
+
+.right_content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub {
+  color: #fff;
+  background-color: #3772ff;
+  box-shadow: 0 2px 0 rgba(5, 122, 255, 0.06);
+  height: 52px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 12px;
+  -webkit-appearance: button;
+  padding: 4px 15px;
+  outline: none;
+  position: relative;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  user-select: none;
+  line-height: 1.5714285714285714;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  color: white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.name_page {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-family: TrajanPro3SemiBold, "sans-serif";
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ec9717;
+}
