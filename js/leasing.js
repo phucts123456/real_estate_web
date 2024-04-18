@@ -14,19 +14,17 @@ $(window).scroll(function (e) {
       Math.round(window.scrollY) + 100 > leasing_detail_header.offsetHeight &&
       Math.round(window.scrollY) + 100 < video_background.offsetHeight
     ) {
-      if (!isScrollingDown) {
-        window.scrollTo({
-          top: overview.offsetTop - leasing_detail_header.offsetHeight,
-          left: 0,
-          behavior: "smooth",
-        });
-        isScrollingDown = true;
-      }
+      window.scrollTo({
+        top: overview.offsetTop - leasing_detail_header.offsetHeight,
+        left: 0,
+        behavior: "smooth",
+      });
       leasing_detail_header.classList.add("scroll-menu");
       let box_logo_homepage =
         document.getElementsByClassName("box-logo-homepage");
       box_logo_homepage[0].classList.add("active");
     } else if (Math.round(window.scrollY) > video_background.offsetHeight) {
+      console.log("go2");
       leasing_detail_header.classList.add("scroll-menu");
       let box_logo_homepage =
         document.getElementsByClassName("box-logo-homepage");
@@ -43,24 +41,16 @@ $(window).scroll(function (e) {
   } else if (st < lastScrollTop) {
     console.log("up");
     if (Math.round(window.scrollY) + 100 < video_background.offsetHeight) {
-      if (!isScrollingUp) {
-        window.scrollTo({
-          top: 0,
-          left: 0,
-          behavior: "smooth",
-        });
-        isScrollingUp = true;
-      }
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
       leasing_detail_header.classList.remove("scroll-menu");
       let box_logo_homepage =
         document.getElementsByClassName("box-logo-homepage");
       box_logo_homepage[0].classList.remove("active");
     }
-    if (Math.round(window.scrollY) == 0) {
-      isScrollingUp = false;
-    }
-  } else {
-    console.log("sdfasdf");
   }
   lastScrollTop = st;
 });
