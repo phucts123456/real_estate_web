@@ -66,8 +66,6 @@
 #navbarNavDropdown {
   flex-grow: 1;
 }
-#navbarNavDropdown.navbar-nav {
-}
 
 .ht-header .container > .row .main_menu > nav li.nav-item {
   display: flex;
