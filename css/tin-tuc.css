@@ -1,3 +1,6 @@
+body {
+  background-color: #f5f1e6;
+}
 #content {
   width: 100%;
 }
@@ -25,9 +28,9 @@
 
 .news_container .news_list {
   position: absolute;
-  bottom: -20%;
   left: 0;
   right: 0;
+  top: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,11 +49,9 @@
   display: flex;
   background-color: #ffffff;
   border-bottom: 1px solid #e4e4e4;
-  padding: 0 15px;
   margin-bottom: 30px;
   height: 50px;
   align-items: center;
-  padding-left: 30px;
 }
 
 .news_container .news_list .container .nav_list .nav_list_item a:after {
@@ -80,4 +81,55 @@
 
 .news_container .news_list .container .nav_list .nav_list_item.active a {
   color: #222;
+}
+
+.news_list .container {
+  background-color: #fff;
+}
+
+.news_list .container .list {
+  display: flex;
+  flex-direction: column;
+}
+
+.new_list_wrapper {
+  padding: 5px;
+  width: 60%;
+}
+.news_list .container .new_list_content {
+  width: 100%;
+  display: flex;
+  padding: 5px;
+}
+
+.new_list_content .new_list_content_left {
+  width: 30%;
+}
+
+.new_list_content .new_list_content_left .new_list_content_left_img_container {
+  width: 100%;
+}
+
+.new_list_content
+  .new_list_content_left
+  .new_list_content_left_img_container
+  img {
+  width: 100%;
+}
+
+.new_list_content .new_list_content_right {
+  width: 70%;
+}
+
+.new_list_content .new_list_content_right {
+  text-align: left;
+  padding: 5px;
+}
+
+.new_list_content .new_list_content_right h5 {
+  font-size: 16px;
+}
+
+.new_list_content .new_list_content_right p {
+  font-size: 14px;
 }
