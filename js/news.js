@@ -5,7 +5,7 @@ let news_list_datas = {
       img: "https://storage.googleapis.com/vinhomes-data-02/styles/images_263_x_146/public/2024_04/Screenshot 2024-04-09 at 10_1712633265.png?itok=pxhmH55Z",
       title:
         "Săn nhà sang dễ dàng với chính sách “khủng”: Trả góp 15 năm không lo lãi suất",
-      content: `Đón đầu đà tăng giá và tranh thủ những chính sách trả góp với ưu đãi tốt là lời giải để không bị bỏ lại phía sau trong cuộc đua sở hữu nhà. Với biên độ sinh lời hấp dẫn trong dài hạn, sở hữu bất`,
+      content: `Đón đầu đà tăng giĐón đầu đà tăng giá và tranh thủ những chính sách trả góp với ưu đãi tốt là lời giải để không bị bỏ lại phía sau trong cuộc đua sở hữu nhà. Với biên độ sinh lời hấp dẫn trong dài hạn, sở hữu bất`,
     },
     {
       id: "doi-van-tu-thue-tro-thanh-chu-can-ho-hang-sang-nho-biet-tan-dung-goi-vay",
@@ -81,46 +81,66 @@ function create_element(tag_name, attributes) {
 
   return element;
 }
-
+let default_loader = 5;
+let end_num = 5;
 let list = document.getElementsByClassName("list")[0];
+let load_btn = document.getElementById("load_more_btn");
+load_btn.addEventListener("click", function () {
+  let num_list = news_list_datas.data;
+  let last_end_num = Number.parseInt(list.dataset.listNumber);
+  let end_num = last_end_num + default_loader;
 
-for (let news_data of news_list_datas.data) {
-  let new_list_wrapper = create_element("div", {
-    className: "new_list_wrapper",
-  });
-  let new_list_content = create_element("div", {
-    className: "new_list_content",
-  });
-  let new_list_content_left = create_element("div", {
-    className: "new_list_content_left",
-  });
-  let new_list_content_left_img_container = create_element("div", {
-    className: "new_list_content_left_img_container",
-  });
-  let new_list_content_right = create_element("div", {
-    className: "new_list_content_right",
-  });
-  let link_img = create_element("a", {
-    href: `chi-tiet.html?title=${news_data.id}`,
-  });
-  let list_item_img = create_element("img", { src: `${news_data.img}` });
-  let heading = create_element("h5");
-  let link_heading = create_element("a", {
-    href: `chi-tiet.html?title=${news_data.id}`,
-    innerText: news_data.title,
-  });
-  let detail_content = create_element("p", {
-    innerText: news_data.content,
-  });
-  new_list_wrapper.appendChild(new_list_content);
-  new_list_content.appendChild(new_list_content_left);
-  new_list_content.appendChild(new_list_content_right);
-  new_list_content_left.appendChild(new_list_content_left_img_container);
-  new_list_content_left_img_container.appendChild(link_img);
-  link_img.appendChild(list_item_img);
-  new_list_content_right.appendChild(heading);
-  heading.appendChild(link_heading);
-  new_list_content_right.appendChild(detail_content);
-  console.log(new_list_wrapper);
-  list.appendChild(new_list_wrapper);
+  if (end_num >= num_list.length) {
+    end_num = num_list.length + 1;
+    load_btn.style.visibility = "hidden";
+  }
+  let datas = news_list_datas.data.slice(last_end_num, end_num);
+  loadList(datas);
+});
+document.addEventListener("DOMContentLoaded", function (event) {
+  let datas = news_list_datas.data.slice(0, end_num);
+  loadList(datas);
+});
+
+function loadList(datas) {
+  for (let news_data of datas) {
+    let new_list_wrapper = create_element("div", {
+      className: "new_list_wrapper",
+    });
+    let new_list_content = create_element("div", {
+      className: "new_list_content",
+    });
+    let new_list_content_left = create_element("div", {
+      className: "new_list_content_left",
+    });
+    let new_list_content_left_img_container = create_element("div", {
+      className: "new_list_content_left_img_container",
+    });
+    let new_list_content_right = create_element("div", {
+      className: "new_list_content_right",
+    });
+    let link_img = create_element("a", {
+      href: `chi-tiet.html?title=${news_data.id}`,
+    });
+    let list_item_img = create_element("img", { src: `${news_data.img}` });
+    let heading = create_element("h5");
+    let link_heading = create_element("a", {
+      href: `chi-tiet.html?title=${news_data.id}`,
+      innerText: news_data.title,
+    });
+    let detail_content = create_element("p", {
+      innerText: news_data.content,
+    });
+    new_list_wrapper.appendChild(new_list_content);
+    new_list_content.appendChild(new_list_content_left);
+    new_list_content.appendChild(new_list_content_right);
+    new_list_content_left.appendChild(new_list_content_left_img_container);
+    new_list_content_left_img_container.appendChild(link_img);
+    link_img.appendChild(list_item_img);
+    new_list_content_right.appendChild(heading);
+    heading.appendChild(link_heading);
+    new_list_content_right.appendChild(detail_content);
+    console.log(new_list_wrapper);
+    list.appendChild(new_list_wrapper);
+  }
 }

@@ -34,6 +34,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .news_container .news_list .container .nav_list .nav_list_item {
   margin-right: 20px;
   margin-left: 20px;
@@ -86,14 +87,33 @@ body {
   background-color: #fff;
 }
 
-.news_list .container .list {
+.news_list .container {
+}
+
+.news_list .container .news_list_left {
+  width: 60%;
+}
+
+.news_list .container .news_list_left .list {
   display: flex;
   flex-direction: column;
+  border-bottom: solid #efefef 1px;
+  margin-bottom: 30px;
+}
+
+.news_list .container .news_list_left button {
+  text-align: center;
+  background-color: #dca447;
+  border: solid #dca447 1px;
+  padding: 10px;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 .new_list_wrapper {
   padding: 5px;
-  width: 60%;
+  width: 100%;
 }
 .news_list .container .new_list_content {
   width: 100%;
@@ -137,6 +157,12 @@ body {
 
 .new_list_content .new_list_content_right p {
   font-size: 14px;
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  background: #fff;
 }
 
 .news_detail_content {
@@ -162,4 +188,95 @@ body {
 
 .news_detail_content .news_detail_content_left .new_detail_content {
   text-align: left;
+}
+
+.new_detail_content img {
+  width: 100%;
+}
+
+.loadingContainer1 {
+  position: fixed;
+  z-index: 999;
+  height: 2em;
+  width: 2em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  rotate: 90deg;
+}
+
+.loadingContainer1 div {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: black;
+  float: left;
+  margin: 0 3px;
+  background: #6859a3;
+  transform: scale(0);
+}
+.loadingContainer1 .ball1 {
+  z-index: 1;
+  -moz-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation: grow 4.4s infinite ease-in-out;
+}
+.loadingContainer1 .ball2 {
+  -moz-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.loadingContainer1 .ball3 {
+  -moz-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.loadingContainer1 .ball4 {
+  -moz-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation: grow 4.4s infinite ease-in-out;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+@-moz-keyframes grow {
+  0% {
+    -moz-transform: scale(0);
+  }
+  25% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(0);
+  }
+  75% {
+    -moz-transform: scale(1);
+    background: #72c2c2;
+  }
+  100% {
+    -moz-transform: scale(0);
+    background: #72c2c2;
+  }
+}
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  25% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0);
+  }
+  75% {
+    -webkit-transform: scale(1);
+    background: #72c2c2;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    background: #72c2c2;
+  }
 }
