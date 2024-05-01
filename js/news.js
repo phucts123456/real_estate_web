@@ -109,7 +109,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
     get: (searchParams, prop) => searchParams.get(prop),
   });
   let title = params.title;
-  if (title != "undefined" && title != "") {
+  console.log(title);
+  if (title != "undefined" && title != "" && title != null) {
     let search_list = [];
     for (let data of news_list_datas.data) {
       if (data.title.includes(title)) search_list.push(data);

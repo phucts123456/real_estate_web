@@ -8,48 +8,58 @@ let isScrollingUp = false;
 $(window).scroll(function (e) {
   st = $(this).scrollTop();
   if (st > lastScrollTop) {
-    console.log(overview.offsetTop - leasing_detail_header.offsetHeight);
-    console.log(Math.round(window.scrollY));
+    // console.log(overview.offsetTop - leasing_detail_header.offsetHeight);
+    // console.log(Math.round(window.scrollY));
     if (
       Math.round(window.scrollY) + 100 > leasing_detail_header.offsetHeight &&
       Math.round(window.scrollY) + 100 < video_background.offsetHeight
     ) {
-      window.scrollTo({
-        top: overview.offsetTop - leasing_detail_header.offsetHeight,
-        left: 0,
-        behavior: "smooth",
-      });
+      setTimeout(function () {
+        window.scrollTo({
+          top: overview.offsetTop - leasing_detail_header.offsetHeight,
+          left: 0,
+          behavior: "smooth",
+        });
+      }, 500);
       leasing_detail_header.classList.add("scroll-menu");
       let box_logo_homepage =
         document.getElementsByClassName("box-logo-homepage");
       box_logo_homepage[0].classList.add("active");
-    } else if (Math.round(window.scrollY) > video_background.offsetHeight) {
-      console.log("go2");
-      leasing_detail_header.classList.add("scroll-menu");
-      let box_logo_homepage =
-        document.getElementsByClassName("box-logo-homepage");
-      box_logo_homepage[0].classList.add("active");
+      // const isReachBottom =
+      //   document.body.scrollHeight ===
+      //   verview.offsetTop - leasing_detail_header.offsetHeight;
+      // if (isReachBottom) alert("reached bottom");
+
+      // console.log(overview.offsetTop - leasing_detail_header.offsetHeight);
+      // console.log(Math.round(window.scrollY + 21.5));
     }
-    if (
-      overview.offsetTop - leasing_detail_header.offsetHeight ==
-      Math.round(window.scrollY)
-    ) {
-      isScrollingDown = false;
-    }
+    // else if (Math.round(window.scrollY) > video_background.offsetHeight) {
+    //   leasing_detail_header.classList.add("scroll-menu");
+    //   let box_logo_homepage =
+    //     document.getElementsByClassName("box-logo-homepage");
+    //   box_logo_homepage[0].classList.add("active");
+    // }
+    // if (
+    //   overview.offsetTop - leasing_detail_header.offsetHeight ==
+    //   Math.round(window.scrollY)
+    // ) {
+    //   isScrollingDown = false;
+    // }
     // console.log(overview.offsetTop - leasing_detail_header.offsetHeight);
     // console.log(Math.round(window.scrollY));
   } else if (st < lastScrollTop) {
-    console.log("up");
     if (Math.round(window.scrollY) + 100 < video_background.offsetHeight) {
       window.scrollTo({
         top: 0,
         left: 0,
         behavior: "smooth",
       });
-      leasing_detail_header.classList.remove("scroll-menu");
-      let box_logo_homepage =
-        document.getElementsByClassName("box-logo-homepage");
-      box_logo_homepage[0].classList.remove("active");
+      setTimeout(function () {
+        leasing_detail_header.classList.remove("scroll-menu");
+        let box_logo_homepage =
+          document.getElementsByClassName("box-logo-homepage");
+        box_logo_homepage[0].classList.remove("active");
+      }, 0);
     }
   }
   lastScrollTop = st;
