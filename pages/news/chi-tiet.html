@@ -198,8 +198,90 @@
             </div>
           </div>
         </div>
+        <div id="footer">
+          <div class="container d-flex">
+            <div id="footer_left">
+              <img
+                src="../../resources/img/footer_icon.svg"
+                height="65px"
+                width="120px"
+              />
+            </div>
+            <div id="footer_mid" class="d-flex flex-column">
+              <p class="footer_mid_address">
+                Công ty Cổ phần Vinhomes Đại diện: Bà Vũ Thái Ninh (Theo giấy uỷ
+                quyền số 057 ngày 25/10/2022) Địa chỉ: Tòa nhà văn phòng
+                Symphony, Đường Chu Huy Mân, Khu đô thị sinh thái Vinhomes
+                Riverside, Phường Phúc Lợi, Quận Long Biên, Thành phố Hà Nội,
+                Việt Nam. Điện thoại: +84 24 39749350
+              </p>
+              <div class="hotline_container d-flex">
+                <p style="position: relative">Tổng đài CSKH</p>
+                <div class="vertical_division_line"></div>
+                <p>1900 2323 89</p>
+              </div>
+            </div>
+            <div id="footer_right">
+              <form
+                id="footer_right_form"
+                class="d-flex flex-column"
+                method="post"
+              >
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control"
+                  placeholder="Họ và tên"
+                  aria-label="Fullname"
+                  aria-describedby="basic-addon1"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  placeholder="Số điện thoại"
+                  aria-label="Phonenumber"
+                  aria-describedby="basic-addon1"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="Email"
+                  aria-describedby="basic-addon1"
+                />
+                <input
+                  type="text"
+                  name="content"
+                  class="form-control"
+                  placeholder="Nội dung cần tư vấn"
+                  aria-label="Content"
+                  aria-describedby="basic-addon1"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="align-self: flex-end"
+                >
+                  Đăng ký
+                </button>
+                <p>
+                  Quý khách đăng ký nhận email quảng cáo về các chương trình ưu
+                  đãi, khuyến mại và tin tức mới nhất từ Vinhomes.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="/js/common.js"></script>
     <script src="../../js/news_detail.js"></script>
   </body>
 </html>

@@ -1,5 +1,9 @@
 body {
   background-color: #f5f1e6;
+  background-image: url(https://vinhomes.vn/themes/porto/css/ht/../../img/vinhomes/ht/bg_tin_tuc.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 #content {
   width: 100%;
@@ -18,7 +22,7 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 40%;
+  top: 10%;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
@@ -27,12 +31,14 @@ body {
 }
 
 .news_container .news_list {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   right: 0;
-  top: 90%;
+  top: 90%; */
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 70px;
+  transform: translateY(-5%);
 }
 
 .news_container .news_list .container .nav_list .nav_list_item {

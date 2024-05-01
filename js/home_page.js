@@ -402,3 +402,5 @@ function CreateUrbanList(name, des, img) {
   div_urban_container.appendChild(detail_footer);
   return div_urban_container;
 }
+
+export default HomePage;
