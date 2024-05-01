@@ -72,7 +72,7 @@
                     </div>
                     <div id="main_menu_2"></div>
                   </li>
-                  <li class="nav-item leaf dropdown active">
+                  <li class="nav-item dropdown active">
                     <a
                       rel="nofollow"
                       class="flex-vertical not-hover ht_relative ht_transition nav-link"
@@ -95,6 +95,16 @@
                     <div id="main_menu_3"></div>
                   </li>
                   <li class="nav-item leaf dropdown">
+                    <a
+                      rel="nofollow"
+                      class="flex-vertical not-hover ht_relative ht_transition nav-link"
+                      aria-haspopup="true"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      href="../news/tin-tuc.html"
+                    >
+                      Tin tức
+                    </a>
                     <div
                       class="dropdown-menu"
                       total="5"
@@ -103,7 +113,7 @@
                       <a
                         rel="nofollow"
                         class="dropdown-item"
-                        href="../news/promotions.html"
+                        href="../news/khuyen-mai.html"
                         ><div class="btn_animation1 from-center">
                           Ưu đãi khuyến mãi
                         </div>
@@ -144,10 +154,21 @@
           <div class="user_actions col-md-1">
             <div class="ua_search">
               <img
+                id="search_icon"
                 class="open"
                 src="../../resources/img/search.svg"
                 alt="search"
               />
+              <div class="search_input">
+                <input
+                  type="text"
+                  name="title_search_header"
+                  placeholder="Tìm kiếm tin tức"
+                  page="/vi/tin-tuc"
+                  valitit="Thông báo"
+                  validate="Hãy nhập từ khóa cần tìm kiếm."
+                />
+              </div>
             </div>
             <div class="ua_search">
               <div
@@ -520,6 +541,10 @@
       const swiper = new Swiper(".swiper", {
         speed: 500,
         slidesPerView: 1,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
       });
       const swiper_office = new Swiper(".office_slider", {
         speed: 500,

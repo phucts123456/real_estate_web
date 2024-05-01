@@ -62,7 +62,7 @@
                     </div>
                     <div id="main_menu_2"></div>
                   </li>
-                  <li class="nav-item leaf dropdown">
+                  <li class="nav-item dropdown">
                     <a
                       rel="nofollow"
                       class="flex-vertical not-hover ht_relative ht_transition nav-link"
@@ -85,6 +85,16 @@
                     <div id="main_menu_3"></div>
                   </li>
                   <li class="nav-item leaf dropdown">
+                    <a
+                      rel="nofollow"
+                      class="flex-vertical not-hover ht_relative ht_transition nav-link"
+                      aria-haspopup="true"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      href="../news/tin-tuc.html"
+                    >
+                      Tin tức
+                    </a>
                     <div
                       class="dropdown-menu"
                       total="5"
@@ -134,10 +144,21 @@
           <div class="user_actions col-md-1">
             <div class="ua_search">
               <img
+                id="search_icon"
                 class="open"
                 src="../../resources/img/search.svg"
                 alt="search"
               />
+              <div class="search_input">
+                <input
+                  type="text"
+                  name="title_search_header"
+                  placeholder="Tìm kiếm tin tức"
+                  page="/vi/tin-tuc"
+                  valitit="Thông báo"
+                  validate="Hãy nhập từ khóa cần tìm kiếm."
+                />
+              </div>
             </div>
             <div class="ua_search">
               <div
@@ -334,7 +355,7 @@
           </div>
         </div>
         <div id="footer_right">
-          <form class="d-flex flex-column" method="post">
+          <form id="footer_right_form" class="d-flex flex-column" method="post">
             <input
               type="text"
               name="phone"
@@ -374,15 +395,7 @@
         </div>
       </div>
     </div>
-    <script>
-      let footer_right = document.getElementById("footer_right");
-      console.log(footer_right);
-      let form = footer_right.getElementByTagName("form")[0];
 
-      let submit_button = form.getElementByTagName("button");
-
-      console.log(submit_button);
-    </script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
