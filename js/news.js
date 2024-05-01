@@ -95,7 +95,12 @@ load_btn.addEventListener("click", function () {
     load_btn.style.visibility = "hidden";
   }
   let datas = news_list_datas.data.slice(last_end_num, end_num);
-  loadList(datas);
+  let loading_spinner = document.getElementsByClassName("loadingContainer1")[0];
+  loading_spinner.style.display = "flex";
+  setTimeout(function () {
+    loading_spinner.style.display = "none";
+    loadList(datas);
+  }, 2000);
 });
 document.addEventListener("DOMContentLoaded", function (event) {
   let datas = news_list_datas.data.slice(0, end_num);

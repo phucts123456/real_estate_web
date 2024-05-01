@@ -197,25 +197,31 @@ body {
 .loadingContainer1 {
   position: fixed;
   z-index: 999;
-  height: 2em;
-  width: 2em;
+  height: 100vh;
+  width: 100vw;
   overflow: show;
   margin: auto;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  rotate: 90deg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #979797;
+  opacity: 0.5;
+  display: none;
 }
 
 .loadingContainer1 div {
-  height: 20px;
-  width: 20px;
+  height: 2%;
+  width: 2%;
   border-radius: 50%;
   background: black;
   float: left;
   margin: 0 3px;
-  background: #6859a3;
+  background: #fff;
+  flex-basis: 1;
   transform: scale(0);
 }
 .loadingContainer1 .ball1 {
@@ -254,11 +260,11 @@ body {
   }
   75% {
     -moz-transform: scale(1);
-    background: #72c2c2;
+    background: #fff;
   }
   100% {
     -moz-transform: scale(0);
-    background: #72c2c2;
+    background: #fff;
   }
 }
 @-webkit-keyframes grow {
@@ -273,10 +279,10 @@ body {
   }
   75% {
     -webkit-transform: scale(1);
-    background: #72c2c2;
+    background: #fff;
   }
   100% {
     -webkit-transform: scale(0);
-    background: #72c2c2;
+    background: #fff;
   }
 }
