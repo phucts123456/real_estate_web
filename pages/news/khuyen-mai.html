@@ -1,6 +1,3 @@
-Đã dùng 90% bộ nhớ … Nếu hết dung lượng lưu trữ, bạn sẽ không thể tạo, chỉnh sửa
-và tải tệp lên. Sử dụng 100 GB dung lượng với giá 45.000 ₫ 0 ₫ trong 1 tháng.
-promotions.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,7 +11,7 @@ promotions.html
       src="../../js/setting.js"
     ></script>
     <link rel="stylesheet" href="../../css/common.css" />
-    <link rel="stylesheet" href="../../css/promotions.css" />
+    <link rel="stylesheet" href="../../css/tin-tuc.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -23,11 +20,17 @@ promotions.html
     <title>Vinhomes</title>
   </head>
   <body>
+    <div class="loadingContainer1">
+      <div class="ball1"></div>
+      <div class="ball2"></div>
+      <div class="ball3"></div>
+      <div class="ball4"></div>
+    </div>
     <div id="header" class="ht-header" style="min-height: 70px">
-      <div class="container position-relative">
+      <div class="container">
         <div class="row flex-nowrap">
           <div class="logo col-md-1">
-            <a href="/index.html">
+            <a href="./index.html">
               <img src="../../resources/img/vinhome-logo.svg" alt="vimhomes" />
             </a>
           </div>
@@ -39,7 +42,7 @@ promotions.html
                     <a
                       rel="nofollow"
                       class="flex-vertical ht_relative ht_transition nav-link"
-                      href="/pages/vinhomes.html"
+                      href="#"
                     >
                       Về Vinhomes
                     </a>
@@ -51,7 +54,7 @@ promotions.html
                       aria-haspopup="true"
                       data-toggle="dropdown"
                       aria-expanded="false"
-                      href="/pages/vinhomes.html"
+                      href="../buy/list.html"
                     >
                       Mua
                     </a>
@@ -60,25 +63,8 @@ promotions.html
                       total="4"
                       aria-labelledby="main_menu_2"
                     >
-                      <a
-                        class="dropdown-item"
-                        href="https://online.vinhomes.vn/"
-                        ><div class="btn_animation1 from-center">
-                          Mua trực tuyến
-                        </div></a
-                      >
-                      <a class="dropdown-item" href="/vi/du-an"
+                      <a class="dropdown-item" href="../buy/list.html"
                         ><div class="btn_animation1 from-center">Dự án</div>
-                      </a>
-                      <a
-                        class="dropdown-item"
-                        href="/vi/bat-dong-san-nghi-duong-condotel"
-                        ><div class="btn_animation1 from-center">
-                          BĐS nghỉ dưỡng
-                        </div>
-                      </a>
-                      <a class="dropdown-item" href="/vi/bat-dong-san-khac"
-                        ><div class="btn_animation1 from-center">BĐS khác</div>
                       </a>
                     </div>
                     <div id="main_menu_2"></div>
@@ -90,7 +76,7 @@ promotions.html
                       aria-haspopup="true"
                       data-toggle="dropdown"
                       aria-expanded="false"
-                      href="/pages/vinhomes.html"
+                      href="../leasing/list.html"
                     >
                       Thuê
                     </a>
@@ -99,27 +85,11 @@ promotions.html
                       total="2"
                       aria-labelledby="main_menu_3"
                     >
-                      <a
-                        class="dropdown-item"
-                        href="https://online.vinhomes.vn/"
-                        ><div class="btn_animation1 from-center">Căn hộ</div>
-                      </a>
-                      <a
-                        class="dropdown-item"
-                        href="https://office.vinhomes.vn/"
+                      <a class="dropdown-item" href="../leasing/list.html"
                         ><div class="btn_animation1 from-center">Văn phòng</div>
                       </a>
                     </div>
                     <div id="main_menu_3"></div>
-                  </li>
-                  <li class="nav-item leaf">
-                    <a
-                      rel="nofollow"
-                      class="flex-vertical ht_relative ht_transition nav-link"
-                      href="/pages/vinhomes.html"
-                    >
-                      Quan hệ cổ đông
-                    </a>
                   </li>
                   <li class="nav-item leaf dropdown">
                     <a
@@ -128,7 +98,7 @@ promotions.html
                       aria-haspopup="true"
                       data-toggle="dropdown"
                       aria-expanded="false"
-                      href="/pages/vinhomes.html"
+                      href="./tin-tuc.html"
                     >
                       Tin tức
                     </a>
@@ -140,49 +110,13 @@ promotions.html
                       <a
                         rel="nofollow"
                         class="dropdown-item"
-                        href="/vi/uu-dai-khuyen-mai"
+                        href="./promotions.html"
                         ><div class="btn_animation1 from-center">
                           Ưu đãi khuyến mãi
                         </div>
                       </a>
-                      <a rel="nofollow" class="dropdown-item" href="/vi/su-kien"
-                        ><div class="btn_animation1 from-center">Sự kiện</div>
-                      </a>
-                      <a
-                        rel="nofollow"
-                        class="dropdown-item"
-                        href="/vi/thi-truong"
-                        ><div class="btn_animation1 from-center">
-                          Thị trường
-                        </div>
-                      </a>
-                      <a
-                        rel="nofollow"
-                        class="dropdown-item"
-                        href="/vi/phong-cach"
-                        ><div class="btn_animation1 from-center">
-                          Phong cách
-                        </div>
-                      </a>
-                      <a
-                        rel="nofollow"
-                        class="dropdown-item"
-                        href="/vi/tin-cong-ty"
-                        ><div class="btn_animation1 from-center">
-                          Tin công ty
-                        </div>
-                      </a>
                     </div>
                     <div id="main_menu_5"></div>
-                  </li>
-                  <li class="nav-item last">
-                    <a
-                      rel="nofollow"
-                      class="flex-vertical ht_relative ht_transition nav-link"
-                      href="/pages/vinhomes.html"
-                    >
-                      Hỗ trợ
-                    </a>
                   </li>
                 </ul>
               </div>
@@ -225,6 +159,9 @@ promotions.html
             <div class="ua_search">
               <div
                 id="block-welcomeusernameloginlogout"
+                id="block-welcomeusernameloginlogout"
+                id="block-welcomeusernameloginlogout"
+                id="block-welcomeusernameloginlogout"
                 class="block block-ht-custom block-welcome-username"
               >
                 <a href="user/login.html">
@@ -240,21 +177,115 @@ promotions.html
         </div>
       </div>
     </div>
-    <div class="new_page" style="padding-top: 100px">
-      <div class="banner">
-        <div
-          class="bannertintuc tin_tuc"
-          style="
-            background-image: url('https://storage.googleapis.com/vinhomes-data-02/news_banner_lv1-min_1688438252.jpg');
-          "
-        >
-          <div class="content">
-            <h2 class="judson_2" style="color: #ffffff; margin: 0">
-              TIN TỨC VINHOMES
-            </h2>
+    <div id="content" style="flex-grow: 1">
+      <div class="news_container">
+        <div class="top_img_container">
+          <img
+            src="https://storage.googleapis.com/vinhomes-data-02/news_banner_lv1-min_1688438252.jpg"
+            alt="vinhomes"
+          />
+          <h4>TIN TỨC VINHOMES</h4>
+        </div>
+        <div class="news_list">
+          <div class="container">
+            <div class="nav_list">
+              <div class="nav_list_item">
+                <a href="./tin-tuc.html">Tin tức</a>
+              </div>
+              <div class="nav_list_item active">
+                <a href="./khuyen-mai.html">Khuyến mãi</a>
+              </div>
+            </div>
+            <div class="news_list_left">
+              <div class="list" data-list-number="5"></div>
+              <button id="load_more_btn">Xem thêm tin tức khác</button>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+          <div class="container d-flex">
+            <div id="footer_left">
+              <img
+                src="../../resources/img/footer_icon.svg"
+                height="65px"
+                width="120px"
+              />
+            </div>
+            <div id="footer_mid" class="d-flex flex-column">
+              <p class="footer_mid_address">
+                Công ty Cổ phần Vinhomes Đại diện: Bà Vũ Thái Ninh (Theo giấy uỷ
+                quyền số 057 ngày 25/10/2022) Địa chỉ: Tòa nhà văn phòng
+                Symphony, Đường Chu Huy Mân, Khu đô thị sinh thái Vinhomes
+                Riverside, Phường Phúc Lợi, Quận Long Biên, Thành phố Hà Nội,
+                Việt Nam. Điện thoại: +84 24 39749350
+              </p>
+              <div class="hotline_container d-flex">
+                <p style="position: relative">Tổng đài CSKH</p>
+                <div class="vertical_division_line"></div>
+                <p>1900 2323 89</p>
+              </div>
+            </div>
+            <div id="footer_right">
+              <form
+                id="footer_right_form"
+                class="d-flex flex-column"
+                method="post"
+              >
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control"
+                  placeholder="Họ và tên"
+                  aria-label="Fullname"
+                  aria-describedby="basic-addon1"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  placeholder="Số điện thoại"
+                  aria-label="Phonenumber"
+                  aria-describedby="basic-addon1"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="Email"
+                  aria-describedby="basic-addon1"
+                />
+                <input
+                  type="text"
+                  name="content"
+                  class="form-control"
+                  placeholder="Nội dung cần tư vấn"
+                  aria-label="Content"
+                  aria-describedby="basic-addon1"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="align-self: flex-end"
+                >
+                  Đăng ký
+                </button>
+                <p>
+                  Quý khách đăng ký nhận email quảng cáo về các chương trình ưu
+                  đãi, khuyến mại và tin tức mới nhất từ Vinhomes.
+                </p>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="/js/common.js"></script>
+    <script src="../../js/news.js"></script>
   </body>
 </html>

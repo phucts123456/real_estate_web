@@ -198,7 +198,33 @@ span.hose_vhm_value {
   position: relative;
   z-index: 1;
 }
-
+.ht-header .user_actions .ua_search > .search_input {
+  position: absolute;
+  top: -100%;
+  width: 235px;
+  height: 100%;
+  right: 12px;
+  background-color: #fff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.ht-header .user_actions .ua_search .search_input {
+  top: 0;
+  outline: 0;
+}
+.ht-header .user_actions .ua_search .search_input input {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  height: 40px;
+  width: 100%;
+}
 .dropdown,
 .dropup {
   position: relative;

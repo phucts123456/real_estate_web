@@ -15,5 +15,3 @@ let location_data = {
     },
   ],
 };
-
-export { history_data };

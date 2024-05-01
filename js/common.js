@@ -17,3 +17,12 @@ footer_right_form.addEventListener("submit", function (e) {
     }
   );
 });
+
+let ua_search = document.getElementById("search_icon");
+let search_input = search_icon.getElementsByClassName("search_input")[0];
+search_input.style.display = "none";
+search_icon.addEventListener("click", function () {
+  if (search_input.style.display == "none") {
+    search_input.style.display = "flex";
+  }
+});
