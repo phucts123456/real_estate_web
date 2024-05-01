@@ -197,7 +197,9 @@ span.hose_vhm_value {
 .ht-header .user_actions .ua_search > img {
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
+
 .ht-header .user_actions .ua_search > .search_input {
   position: absolute;
   top: -100%;
@@ -420,4 +422,8 @@ span.hose_vhm_value {
   width: 70%;
   font-size: 12px;
   align-self: flex-end;
+}
+
+.news_list_left h4 {
+  display: none;
 }

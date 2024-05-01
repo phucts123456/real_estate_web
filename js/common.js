@@ -18,11 +18,22 @@ footer_right_form.addEventListener("submit", function (e) {
   );
 });
 
-let ua_search = document.getElementById("search_icon");
-let search_input = search_icon.getElementsByClassName("search_input")[0];
-search_input.style.display = "none";
-search_icon.addEventListener("click", function () {
-  if (search_input.style.display == "none") {
-    search_input.style.display = "flex";
-  }
-});
+// let search_icon = document.getElementById("search_icon");
+// let search_input = document.getElementsByClassName("search_input")[0];
+// let input = search_input.getElementsByTagName("input")[0];
+
+// search_input.style.display = "none";
+
+// search_icon.addEventListener("click", function () {
+//   console.log(search_input.style.display);
+//   if (search_input.style.display == "none") {
+//     search_input.style.display = "flex";
+//     console.log("object");
+//   } else {
+//     if (input.value != "") {
+//       window.location.replace(
+//         `http://127.0.0.1:5502/pages/news/tin-tuc.html?title=${input.value}`
+//       );
+//     }
+//   }
+// });

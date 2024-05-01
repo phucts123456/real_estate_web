@@ -92,19 +92,39 @@ load_btn.addEventListener("click", function () {
 
   if (end_num >= num_list.length) {
     end_num = num_list.length + 1;
-    load_btn.style.visibility = "hidden";
   }
   let datas = news_list_datas.data.slice(last_end_num, end_num);
   let loading_spinner = document.getElementsByClassName("loadingContainer1")[0];
   loading_spinner.style.display = "flex";
   setTimeout(function () {
+    if (end_num >= num_list.length) {
+      load_btn.style.visibility = "hidden";
+    }
     loading_spinner.style.display = "none";
     loadList(datas);
   }, 2000);
 });
 document.addEventListener("DOMContentLoaded", function (event) {
-  let datas = news_list_datas.data.slice(0, end_num);
-  loadList(datas);
+  const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+  });
+  let title = params.title;
+  if (title != "undefined" && title != "") {
+    let search_list = [];
+    for (let data of news_list_datas.data) {
+      if (data.title.includes(title)) search_list.push(data);
+    }
+    if (search_list.length <= 0) {
+      let msg = document.getElementById("result_not_found_msg");
+      msg.style.display = "block";
+      load_btn.style.visibility = "hidden";
+    } else {
+      loadList(search_list);
+    }
+  } else {
+    let datas = news_list_datas.data.slice(0, end_num);
+    loadList(datas);
+  }
 });
 
 function loadList(datas) {
