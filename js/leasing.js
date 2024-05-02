@@ -206,3 +206,10 @@ var scrollEvents = (function (document, $) {
   };
   return d;
 })(document, $);
+
+let intro_block = document.getElementsByClassName("block-intro")[0];
+console.log(intro_block);
+setTimeout(function () {
+  intro_block.classList.remove("on");
+  intro_block.classList.add("off");
+}, 1000);

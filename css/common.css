@@ -202,7 +202,7 @@ span.hose_vhm_value {
 
 .ht-header .user_actions .ua_search > .search_input {
   position: absolute;
-  top: -100%;
+  top: 0;
   width: 235px;
   height: 100%;
   right: 12px;

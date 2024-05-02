@@ -281,16 +281,19 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 });
 
 let title = params.title;
-console.log(title);
-for (let news_data of news_datas.data) {
-  if (news_data.id == title) {
-    let content_container = document.getElementsByClassName(
-      "news_detail_content_left"
-    )[0];
-    let content_heading = content_container.getElementsByTagName("h5")[0];
-    content_heading.innerText = news_data.title;
-    let content_detail =
-      content_container.getElementsByClassName("new_detail_content")[0];
-    content_detail.innerHTML = news_data.content;
+if (title != "undefined" && title != "" && title != null) {
+  for (let news_data of news_datas.data) {
+    if (news_data.id == title) {
+      let content_container = document.getElementsByClassName(
+        "news_detail_content_left"
+      )[0];
+      let content_heading = content_container.getElementsByTagName("h5")[0];
+      content_heading.innerText = news_data.title;
+      let content_detail =
+        content_container.getElementsByClassName("new_detail_content")[0];
+      content_detail.innerHTML = news_data.content;
+    }
   }
+} else {
+  window.location.replace(`http://127.0.0.1:5502/pages/news/tin-tuc.html`);
 }
