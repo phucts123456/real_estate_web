@@ -243,6 +243,15 @@ span.hose_vhm_value {
   pointer-events: none;
 }
 
+.dropdown-menu::before {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 30px;
+  top: -20px;
+  cursor: pointer;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 110%;
