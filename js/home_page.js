@@ -5,13 +5,98 @@ let history_datas = {
       history:
         "Thành lập công ty Cổ phần Vincom, tiền thân là Tập đoàn Vingroup- Công ty CP, công ty mẹ của Vinhomes",
       achivement: `abc`,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/2002.png?itok=r4yp6oGI",
+    },
+    {
+      year: "2008",
+      history: `Tiền thân của Vinhomes – CTCP Đô thị BIDV – PP được thành lập với vốn điều lệ đăng ký ban đầu 300 tỷ đồng`,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
       image: "../resources/img/vinhomes_logo.jpg",
+    },
+    {
+      year: "2009",
+      history: `Đổi tên thành CTCP Phát triển Đô thị Nam Hà Nội `,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
+      image: "../resources/img/vinhomes_logo.jpg",
+    },
+    {
+      year: "2010",
+      history: `Tăng vốn điều lệ lên 2.000 tỷ đồng`,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
+      image: "../resources/img/vinhomes_logo.jpg",
+    },
+    {
+      year: "2011",
+      history: `Trở thành công ty đại chúng và nhận Quyết định về việc chấp thuận đăng ký giao dịch cổ phiếu tại Sở Giao dịch Chứng khoán Hà Nội (UPCOM) với mã chứng khoán NHN. Khởi công dự án khu đô thị phức hợp cao cấp Vinhomes Times City (Hà Nội) với hơn 12.000 căn hộ`,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
+      image: "../resources/img/vinhomes_logo.jpg",
+    },
+    {
+      year: "2012",
+      history: `"Dự án Phức hợp tốt nhất châu Á-Thái Bình Dương” cho khu đô thị Vinhomes Riverside tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards)`,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
+      image: "../resources/img/vinhomes_logo.jpg",
+    },
+    {
+      year: "2013",
+      history: `Đưa vào vận hành dự án khu đô thị phức hợp cao cấp Vinhomes Royal City (Hà Nội) với gần 5.000 căn hộ`,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/2013.png?itok=Zg7UjCbh",
     },
     {
       year: "2014",
       history: `Đưa vào vận hành dự án khu đô thị cao cấp Vinhomes Riverside, Hà Nội, rộng 183,5 ha`,
       achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
-      image: "../resources/img/vinhomes_logo.jpg",
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/2015.png?itok=IKN54A9_",
+    },
+    {
+      year: "2015",
+      history: `Đưa vào vận hành dự án Vinhomes Times City với phong cách kiến trúc sinh thái thân thiện của đảo quốc Singapore`,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới - International Property Awards ở 2 hạng mục: - “Trung tâm thương mại tốt nhất Việt Nam” cho Vincom Mega Mall Royal City - “Dự án phức hợp được đánh giá cao” cho khu đô thị Royal City`,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/2015.png?itok=IKN54A9_",
+    },
+    {
+      year: "2015",
+      history: `Đưa vào vận hành dự án Vinhomes Times City với phong cách kiến trúc sinh thái thân thiện của đảo quốc Singapore `,
+      achivement: `Giải kép Tốt nhất Việt Nam tại Giải thưởng bất động sản Châu Á - Thái Bình Dương (Asia Pacific Property Awards), thuộc hệ thống giải thưởng bất động sản hàng đầu thế giới -International Property Awards ở 2 hạng mục:
+- Dự án phức hợp tốt nhất cho Khu đô thị Times City
+- Trung tâm thương mại tốt nhất cho Vincom Mega Mall Times City`,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/2015.png?itok=IKN54A9_",
+    },
+    {
+      year: "2016",
+      history: `Đưa vào vận hành Vinhomes Central Park tại Thành phố Hồ Chí Minh – một trong những khu đô thị mới hiện đại và cao cấp bậc nhất Việt Nam với hơn 10.000 căn hộ, biệt thự và nhà phố thương mại`,
+      achivement: `Hai vị trí cao nhất thế giới tại Lễ trao giải thưởng Bất động sản Quốc tế International Property Awards (IPA):
+- Giải nhất Thế giới ở hạng mục “Tòa nhà cao tầng” với Tòa tháp Landmark 81
+- Giải nhất Châu Á Thái Bình Dương ở hạng mục “Khu đô thị phức hợp” với Vinhomes Central Park. `,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/2015.png?itok=IKN54A9_",
+    },
+    {
+      year: "2017",
+      history: `Đưa vào vận hành Vinhomes Golden River tại Thành phố Hồ Chí Minh – khu đô thị sang trọng bậc nhất bên sông Sài Gòn và ngay trung tâm Quận 1`,
+      achivement: `Hệ thống giải thưởng Bất động sản Quốc tế danh giá - International Property Awards trao cho Vinhomes Metropolis giải “Tòa nhà cao tầng tốt nhất Châu Á - Thái Bình Dương”`,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/golden_river.png?itok=8G2P5VGc",
+    },
+    {
+      year: "2018",
+      history: `•Đổi tên thành Công ty Cổ phần Vinhomes, tăng vốn điều lệ lên 28.365 tỷ đồng và niêm yết tại Sở giao dịch Chứng khoán Thành phố Hồ Chí Minh (HOSE), hiện nằm trong Top 3 công ty có giá trị vốn hóa lớn nhất thị trường Việt Nam`,
+      achivement: `Vinhomes Riverside được vinh danh là "Bất động sản tốt nhất thế giới" tại Lễ trao giải thưởng Bất động sản Quốc tế - International Property Awards tổ chức tại London`,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/lm81.png?itok=gMIRvvIw",
+    },
+    {
+      year: "2019",
+      history: `•Quy hoạch lại các dòng sản phẩm thành các dòng thương hiệu gồm Vinhomes Diamond, Vinhomes Ruby, Vinhomes Sapphire và nâng cấp các dự án VinCity thành các Đại dự án thông minh mang thương hiệu Vinhomes `,
+      achivement: `Tổ chức Kỷ lục thế giới trao danh hiệu “Khu đô thị có biển hồ nước mặn và hồ nước ngọt nhân tạo trải cát trắng lớn nhất thế giới” cho dự án Vinhomes Ocean Park`,
+      image:
+        "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_555_x_354/public/2021_03/2019.png?itok=8i1j4oMM",
     },
   ],
 };
@@ -334,10 +419,11 @@ function createYearSlider(year) {
     className: "nested_square",
   });
   let div_year = create_element("div", {
-    className: "year aos-init",
-    dataAosDelay: "0",
+    className: "year aos-init aos-animate",
     innerText: year,
   });
+  div_year.dataset.aosDelay = "0";
+  div_year.dataset.aos = "fade-up";
   div_square.appendChild(div_nested_square);
   div_swiper_slide.appendChild(div_square);
   div_swiper_slide.appendChild(div_year);

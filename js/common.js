@@ -1,14 +1,16 @@
 let footer_right_form = document.getElementById("footer_right_form");
-console.log(footer_right_form);
 (function () {
   // https://dashboard.emailjs.com/admin/account
   emailjs.init("LVDjy-_AdCjJtPP3e");
 })();
 footer_right_form.addEventListener("submit", function (e) {
+  let loading_spinner = document.getElementsByClassName("loadingContainer1")[0];
+  loading_spinner.style.display = "flex";
   e.preventDefault();
   const data = new FormData(footer_right_form);
   emailjs.sendForm("service_xqor18n", "template_z8dxix4", this).then(
     function () {
+      loading_spinner.style.display = "none";
       alert(
         "Cảm ơn bạn đã liên hệ. Chúng tôi sẽ trả lời trong thời gian sớm nhất"
       );
