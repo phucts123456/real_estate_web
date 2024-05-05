@@ -48,12 +48,13 @@ $(window).scroll(function (e) {
     // console.log(overview.offsetTop - leasing_detail_header.offsetHeight);
     // console.log(Math.round(window.scrollY));
   } else if (st < lastScrollTop) {
-    if (Math.round(window.scrollY) + 100 < video_background.offsetHeight) {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
+    if (Math.round(window.scrollY) <= 200) {
+      //if (Math.round(window.scrollY) + 100 < video_background.offsetHeight) {
+      // window.scrollTo({
+      //   top: 0,
+      //   left: 0,
+      //   behavior: "smooth",
+      // });
       setTimeout(function () {
         leasing_detail_header.classList.remove("scroll-menu");
         let box_logo_homepage =

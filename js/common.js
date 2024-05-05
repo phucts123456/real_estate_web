@@ -64,12 +64,13 @@ search_icon.addEventListener("click", function () {
   console.log(search_input.style.display);
   if (search_input.style.display == "none") {
     search_input.style.display = "flex";
-    console.log("object");
   } else {
     if (input.value != "") {
       window.location.replace(
         `http://127.0.0.1:5502/pages/news/tin-tuc.html?title=${input.value}`
       );
+    } else {
+      alert("Vui lòng nhập từ khóa tìm kiếm.");
     }
   }
 });

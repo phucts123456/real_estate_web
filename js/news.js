@@ -67,6 +67,12 @@ Lộ diện điểm đến an cư, đầu tư mới khiến giới nhà giàu qu
       title: `Khám phá “viên kim cương trên vương miện” tại “đảo tỷ phú” Vinhomes Royal Island`,
       content: `Trong bộ sưu tập những tiện ích đẳng cấp thế giới quy tụ tại “đảo tỷ phú” Vinhomes Royal Island (Vũ Yên, Hải Phòng), không thể không nhắc đến River Walk - phố đi bộ văn hóa, vui chơi, mua sắm, ẩm thực bờ sông dài và đẹp nhất Việt Nam.`,
     },
+    {
+      id: "co-hoi-mua-nha-sang-trung-tang-xe-dien-vinfast-tai-dai-do-thi-bien-vinhomes",
+      img: "https://gcp-cdn.vinhomes.vn/cms-data/styles/images_263_x_146/public/2023_01/anh-120230117193022_1674027172.jpg?itok=Qw3SDGz5",
+      title: `Cơ hội mua nhà sang trúng tặng xe điện VinFast tại đại đô thị biển Vinhomes`,
+      content: `Thị trường bất động sản dần xuất hiện những tín hiệu tích cực nhờ nỗ lực gỡ “nút thắt” từ chính sách vĩ mô, cùng tác động của các chính sách bán hàng hấp dẫn. Trong đó, tại siêu quần thể đô thị biển 1.200ha Vinhomes, khách hàng có thể nhận quà với tổng giá trị lên tới hàng tỉ đồng từ chương trình ưu đãi hấp dẫn “Nhà sang xế xịn - Xuân sang phát tài”.`,
+    },
   ],
 };
 
@@ -84,16 +90,18 @@ function create_element(tag_name, attributes) {
 let default_loader = 5;
 let end_num = 5;
 let list = document.getElementsByClassName("list")[0];
+let currentNum = document.getElementsByClassName("new_list_wrapper");
 let load_btn = document.getElementById("load_more_btn");
 load_btn.addEventListener("click", function () {
   let num_list = news_list_datas.data;
-  let last_end_num = Number.parseInt(list.dataset.listNumber);
+  let last_end_num = currentNum.length;
   let end_num = last_end_num + default_loader;
 
   if (end_num >= num_list.length) {
     end_num = num_list.length + 1;
   }
   let datas = news_list_datas.data.slice(last_end_num, end_num);
+  list.dataset.listNumber = end_num;
   let loading_spinner = document.getElementsByClassName("loadingContainer1")[0];
   loading_spinner.style.display = "flex";
   setTimeout(function () {
@@ -102,7 +110,7 @@ load_btn.addEventListener("click", function () {
     }
     loading_spinner.style.display = "none";
     loadList(datas);
-  }, 2000);
+  }, 1000);
 });
 document.addEventListener("DOMContentLoaded", function (event) {
   const params = new Proxy(new URLSearchParams(window.location.search), {
