@@ -267,10 +267,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let urban_map_filter = document.getElementById("urban_map_filter_side_bar");
     if (urban_map_filter.offsetWidth < 395) {
       urban_map_filter.style.width = "395px";
-      side_bar_icon.src = "/resources/img/angle_left_icon.png";
+      side_bar_icon.src = "../resources/img/angle_left_icon.png";
     } else {
       urban_map_filter.style.width = 0;
-      side_bar_icon.src = "/resources/img/angle_right_icon.png";
+      side_bar_icon.src = "../resources/img/angle_right_icon.png";
     }
   });
   let location_select = document.getElementById("location_select");
