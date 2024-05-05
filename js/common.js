@@ -89,6 +89,10 @@ const default_user = {
 let login_form = document.getElementById("login_form");
 
 if (login_form != null) {
+  let loggedInUser = localStorage.getItem("loginUser");
+  if (loggedInUser != null) {
+    window.location.replace("http://127.0.0.1:5502/pages/index.html");
+  }
   login_form.addEventListener("submit", function (e) {
     e.preventDefault();
     const data = new FormData(login_form);
@@ -108,17 +112,9 @@ if (login_form != null) {
             history.back();
           else
             window.location.replace("http://127.0.0.1:5502/pages/index.html");
+        } else {
+          alert("Sai tài khoản hoặc mật khẩu");
         }
-      }
-    } else {
-      if (
-        username == default_user.username &&
-        password == default_user.password
-      ) {
-        localStorage.setItem("loginUser", username);
-        history.back();
-      } else {
-        alert("Nhập sai username hoặc password, vui lòng nhập lại");
       }
     }
   });
