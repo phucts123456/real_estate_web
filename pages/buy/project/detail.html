@@ -184,6 +184,10 @@
                     alt="search"
                   />
                 </a>
+                <ul id="user_infor">
+                  <li id="user_infor_name" class="user_infor_item"></li>
+                  <li class="user_infor_item">Đăng xuất</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -510,6 +514,10 @@
         speed: 500,
         slidesPerView: 3,
         spaceBetween: 30,
+        autoplay: {
+          delay: 1500,
+          disableOnInteraction: false,
+        },
       });
       const swiper_area = new Swiper(".swiper_area", {
         centeredSlides: true,

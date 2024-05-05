@@ -44,25 +44,33 @@
         />
         <div class="name_page"><h1>VINHOMES</h1></div>
         <div class="content">
-          <form class="form-floating">
+          <form id="login_form" class="form-floating">
             <div>
-              <input type="text" placeholder="Username or email..." />
-              <label class="name" for="floatingInputValue"
-                >Username or email</label
-              >
+              <label class="name" for="floatingInputValue">Username</label>
+              <input
+                name="username"
+                type="text"
+                placeholder="Username or email..."
+              />
             </div>
             <div class="pass">
-              <input type="password" placeholder="Password..." />
               <label>Password</label>
+              <input
+                name="password"
+                type="password"
+                placeholder="Password..."
+              />
             </div>
             <div>
-              <button type="submit" class="button">Sign in</button>
+              <button type="submit" class="button" style="margin-top: 10px">
+                Sign in
+              </button>
             </div>
             <div class="divider" role="separator">
               <span>Or sign in with</span>
             </div>
             <div>
-              <button type="submit" class="Vin">VingroupAD</button>
+              <button class="Vin">VingroupAD</button>
             </div>
             <div class="Reg">
               <span
@@ -79,5 +87,10 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="/js/common.js"></script>
   </body>
 </html>

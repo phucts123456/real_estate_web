@@ -439,3 +439,36 @@ span.hose_vhm_value {
 .news_list_left h4 {
   display: none;
 }
+
+#block-welcomeusernameloginlogout {
+  position: relative;
+}
+#user_infor::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  width: 40px;
+  left: 45px;
+  height: 30px;
+}
+#user_infor {
+  list-style: none;
+  position: absolute;
+  width: 150px;
+  background-color: #fff;
+  top: 50px;
+  text-align: center;
+  padding-left: 0;
+  left: -60px;
+  display: none;
+}
+#user_infor .user_infor_item {
+  padding: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user_infor_item:hover {
+  background-color: #ccc;
+}
