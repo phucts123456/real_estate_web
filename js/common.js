@@ -119,6 +119,8 @@ if (login_form != null) {
       if (loginSuccess == false) {
         alert("Sai tài khoản hoặc mật khẩu. Vui lòng nhập lại.");
       }
+    } else {
+      alert("Sai tài khoản hoặc mật khẩu. Vui lòng nhập lại.");
     }
   });
 }
