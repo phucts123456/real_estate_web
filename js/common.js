@@ -136,9 +136,6 @@ function validateRegister(firstname, lastname, email, password, rePassword) {
   if (!email.match(emailFormat)) {
     error += "Vui lòng nhập đúng format email" + newLine;
   }
-  if (lastname.length <= 0) {
-    error += "Vui lòng nhập last name" + newLine;
-  }
   if (password.length <= 8 || password.length > 16) {
     error += "Vui lòng nhập password 8-16 kí tự" + newLine;
   }
@@ -197,7 +194,7 @@ if (register_form != null) {
       let userListJson = JSON.parse(userList);
       for (let user of userListJson) {
         if (user.email == email) {
-          alert("email đã tồn tại");
+          alert("email đã tồn tại. Vui lòng nhập email khác.");
           return;
         }
       }
