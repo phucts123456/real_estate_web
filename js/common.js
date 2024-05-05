@@ -100,9 +100,11 @@ if (login_form != null) {
     let password = data.get("password");
     let userList = localStorage.getItem("userlist");
     if (userList != null) {
+      let loginSuccess = false;
       let userListJson = JSON.parse(userList);
       for (let user of userListJson) {
         if (username == user.email && password == user.password) {
+          loginSuccess = true;
           localStorage.setItem("loginUser", user.email);
           if (
             document.referrer.includes(
@@ -112,9 +114,10 @@ if (login_form != null) {
             history.back();
           else
             window.location.replace("http://127.0.0.1:5502/pages/index.html");
-        } else {
-          alert("Sai tài khoản hoặc mật khẩu");
         }
+      }
+      if (loginSuccess == false) {
+        alert("Sai tài khoản hoặc mật khẩu. Vui lòng nhập lại.");
       }
     }
   });
