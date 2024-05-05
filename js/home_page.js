@@ -366,7 +366,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
               let side_bar_icon = side_bar
                 .getElementsByClassName("slide_filter_btn")[0]
                 .getElementsByTagName("img")[0];
-              side_bar_icon.src = "/resources/img/angle_right_icon.png";
+              side_bar_icon.src = "../resources/img/angle_right_icon.png";
             }
           }
           detail_body[0].style.display = "block";
