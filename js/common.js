@@ -71,7 +71,7 @@ if (search_icon != null) {
     } else {
       if (input.value != "") {
         window.location.replace(
-          `http://127.0.0.1:5502/pages/news/tin-tuc.html?title=${input.value}`
+          `https://phucts123456.github.io/real_estate_web/pages/news/tin-tuc.html?title=${input.value}`
         );
       } else {
         alert("Vui lòng nhập từ khóa tìm kiếm.");
@@ -91,7 +91,9 @@ let login_form = document.getElementById("login_form");
 if (login_form != null) {
   let loggedInUser = localStorage.getItem("loginUser");
   if (loggedInUser != null) {
-    window.location.replace("http://127.0.0.1:5502/pages/index.html");
+    window.location.replace(
+      "https://phucts123456.github.io/real_estate_web/pages/index.html"
+    );
   }
   login_form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -108,12 +110,14 @@ if (login_form != null) {
           localStorage.setItem("loginUser", user.email);
           if (
             document.referrer.includes(
-              "http://127.0.0.1:5502/pages/user/register.html"
+              "https://phucts123456.github.io/real_estate_web/pages/user/register.html"
             )
           )
             history.back();
           else
-            window.location.replace("http://127.0.0.1:5502/pages/index.html");
+            window.location.replace(
+              "https://phucts123456.github.io/real_estate_web/pages/index.html"
+            );
         }
       }
       if (loginSuccess == false) {
@@ -182,7 +186,9 @@ if (register_form != null) {
     let error = validateRegister(firstname, lastname, email, password, rePass);
     if (error != "") {
       alert(error);
-      window.location.replace(`http://127.0.0.1:5502/pages/user/register.html`);
+      window.location.replace(
+        `https://phucts123456.github.io/real_estate_web/pages/user/register.html`
+      );
       return;
     }
     let userList = localStorage.getItem("userlist");
@@ -198,7 +204,7 @@ if (register_form != null) {
         if (user.email == email) {
           alert("email đã tồn tại. Vui lòng nhập email khác.");
           window.location.replace(
-            `http://127.0.0.1:5502/pages/user/register.html`
+            `https://phucts123456.github.io/real_estate_web/pages/user/register.html`
           );
           return;
         }
@@ -207,14 +213,18 @@ if (register_form != null) {
       let userListJsonString = JSON.stringify(userListJson);
       localStorage.setItem("userlist", userListJsonString);
       alert("Tạo tài khoản thành công");
-      window.location.replace(`http://127.0.0.1:5502/pages/user/login.html`);
+      window.location.replace(
+        `https://phucts123456.github.io/real_estate_web/pages/user/login.html`
+      );
     } else {
       let userList = [];
       userList.push(newUser);
       let userListJsonString = JSON.stringify(userList);
       localStorage.setItem("userlist", userListJsonString);
       alert("Tạo tài khoản thành công");
-      window.location.replace(`http://127.0.0.1:5502/pages/user/login.html`);
+      window.location.replace(
+        `https://phucts123456.github.io/real_estate_web/pages/user/login.html`
+      );
     }
   });
 }
