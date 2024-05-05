@@ -177,6 +177,7 @@ if (register_form != null) {
     let error = validateRegister(firstname, lastname, email, password, rePass);
     if (error != "") {
       alert(error);
+      window.location.replace(`http://127.0.0.1:5502/pages/user/register.html`);
       return;
     }
     let userList = localStorage.getItem("userlist");
@@ -191,6 +192,9 @@ if (register_form != null) {
       for (let user of userListJson) {
         if (user.email == email) {
           alert("email đã tồn tại. Vui lòng nhập email khác.");
+          window.location.replace(
+            `http://127.0.0.1:5502/pages/user/register.html`
+          );
           return;
         }
       }
